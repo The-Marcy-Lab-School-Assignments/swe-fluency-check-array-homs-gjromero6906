@@ -93,5 +93,9 @@ const getTotalScore = (users) => {
 // Expected Output: 400
 // Problem 10
 const sortUsersByScoreDescending = (users) => {
-
+  return users.sort((a,b)=>{
+    if (a.score > b.score) return -1;
+    if (a.score < b.score) return 1;
+    return 0;
+  })
 };
