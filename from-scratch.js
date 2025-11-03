@@ -65,13 +65,14 @@ const sampleUsers = [
 const printUserNamesAndScores = (users) => {
   users.forEach(user =>console.log(`${user.name} scored ${user.score} points.`));
 };
-printUserNamesAndScores(sampleUsers);
 
 // Problem 7
 const getUserNames = (users) => {
-
+ let names = [];
+ users.forEach(user => names.push(user.name));
+ return names;
 };
-
+console.log(getUserNames(sampleUsers));
 
 // Problem 8
 const getActiveUsersUnder30 = (users) => {
