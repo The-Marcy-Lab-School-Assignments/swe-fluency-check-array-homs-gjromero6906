@@ -72,11 +72,17 @@ const getUserNames = (users) => {
  users.forEach(user => names.push(user.name));
  return names;
 };
-console.log(getUserNames(sampleUsers));
+
 
 // Problem 8
 const getActiveUsersUnder30 = (users) => {
-
+  let requirementsAcived =[];
+  users.forEach(user =>{
+    if(user.age<30 && user.isActive){
+      requirementsAcived.push(user);
+    }}
+  )
+  return requirementsAcived;
 };
 
 
