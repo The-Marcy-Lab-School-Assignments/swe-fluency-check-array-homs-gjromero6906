@@ -41,9 +41,14 @@ const getEvenNumbers = (nums) => {
 
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+  let largest = -Infinity
+  numbers.forEach(num =>{
+    if(num>largest){
+      largest = num;
+    }
+  } )
+  return largest;
 };
-
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
 /* -------------------------------------------------- */
@@ -58,9 +63,9 @@ const sampleUsers = [
 
 // Problem 6
 const printUserNamesAndScores = (users) => {
-
+  users.forEach(user =>console.log(`${user.name} scored ${user.score} points.`));
 };
-
+printUserNamesAndScores(sampleUsers);
 
 // Problem 7
 const getUserNames = (users) => {
