@@ -14,7 +14,9 @@ const printEveryWord = (words) => {
 };
 // Problem 2
 const getStringLengths = (strings) => {
-
+  let lengthOfString =[];
+  strings.forEach(word =>lengthOfString.push(word.length));
+  return lengthOfString;
 };
 
 // Problem 3
