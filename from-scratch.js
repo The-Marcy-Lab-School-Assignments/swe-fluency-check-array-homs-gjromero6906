@@ -88,9 +88,9 @@ const getActiveUsersUnder30 = (users) => {
 
 // Problem 9
 const getTotalScore = (users) => {
-
+  return users.reduce((total,user)=>total+user.score,0);
 };
-
+// Expected Output: 400
 // Problem 10
 const sortUsersByScoreDescending = (users) => {
 
